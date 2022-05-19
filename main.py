@@ -1,5 +1,5 @@
 from tabulate import tabulate
-from mall_architecture import mall_architecture
+from parking_lot_layout import parking_lot_layout
 from bill_formate import Bill
 from datetime import datetime
 import json
@@ -123,7 +123,7 @@ def exit_lot(vehicle_number):
             FW_table = tabulate(FW,headers=['s '+str(x) for x in range(mall.four_wheeler)],tablefmt='orgtbl')
             print(FW_table)
 
-mall = mall_architecture()
+mall = parking_lot_layout()
 
 TW = [[0 for i in range(mall.two_wheeler)] for j in range(mall.floor)]
 FW = [[0 for i in range(mall.four_wheeler)] for j in range(mall.floor)]
